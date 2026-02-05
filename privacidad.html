@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - FA GRUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/FA GRUP LOGO.svg" alt="FA GRUP Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="language-selector">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" onclick="toggleDropdown(event)" aria-expanded="false">
+                        <img src="images/flag_es.png" id="current-flag" alt="Español">
+                        <span id="current-lang-text">ES</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('es')">
+                            <img src="images/flag_es.png" alt="Español"> ES
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('ca')">
+                            <img src="images/flag_ca.png" alt="Català"> CAT
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('fr')">
+                            <img src="images/flag_fr.png" alt="Français"> FR
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('en')">
+                            <img src="images/flag_en.png" alt="English"> EN
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="privacy-hero">
+        <div class="container">
+            <h1><i class="fas fa-shield-alt"></i> <span data-translate="privacy_title">Política de Privacidad</span></h1>
+            <p data-translate="privacy_subtitle">FA GRUP - Protección de Datos Personales</p>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="privacy-content">
+        <div class="container">
+            <p class="last-update" data-translate="privacy_last_update">Última actualización: 4 de febrero de 2026</p>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section1_title">1. Responsable del Tratamiento</h2>
+                <p><strong>FA GRUP</strong>, con domicilio en Avenida Josep Tarradellas 134 bajos, 08029 Barcelona, España, es el responsable del tratamiento de los datos personales que nos proporcione.</p>
+                <p><strong>Contacto:</strong></p>
+                <ul>
+                    <li>Email: fagrupinmobiliaria@gmail.com</li>
+                    <li>Teléfono: +34 635 871 358</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section2_title">2. Datos que Recopilamos</h2>
+                <p>FA GRUP puede recopilar los siguientes tipos de datos personales:</p>
+                <ul>
+                    <li><strong>Datos de identificación:</strong> Nombre, apellidos, DNI/NIE</li>
+                    <li><strong>Datos de contacto:</strong> Dirección de correo electrónico, número de teléfono, dirección postal</li>
+                    <li><strong>Datos de navegación:</strong> Dirección IP, tipo de navegador, páginas visitadas</li>
+                    <li><strong>Datos relacionados con servicios:</strong> Información sobre propiedades de interés, preferencias de búsqueda</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section3_title">3. Finalidad del Tratamiento</h2>
+                <p>Los datos personales recopilados serán tratados para las siguientes finalidades:</p>
+                <ul>
+                    <li>Gestión de consultas y solicitudes de información</li>
+                    <li>Prestación de servicios inmobiliarios, seguros y viajes</li>
+                    <li>Envío de comunicaciones comerciales sobre nuestros servicios (con su consentimiento previo)</li>
+                    <li>Cumplimiento de obligaciones legales y contractuales</li>
+                    <li>Mejora de nuestros servicios y experiencia del usuario</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section4_title">4. Base Jurídica del Tratamiento</h2>
+                <p>El tratamiento de sus datos personales se basa en:</p>
+                <ul>
+                    <li><strong>Consentimiento:</strong> Para el envío de comunicaciones comerciales</li>
+                    <li><strong>Ejecución de contrato:</strong> Para la prestación de servicios solicitados</li>
+                    <li><strong>Interés legítimo:</strong> Para la gestión y mejora de nuestros servicios</li>
+                    <li><strong>Obligación legal:</strong> Para cumplir con normativas aplicables</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section5_title">5. Destinatarios de los Datos</h2>
+                <p>Sus datos personales podrán ser comunicados a:</p>
+                <ul>
+                    <li>Empresas asociadas del grupo FA GRUP para la prestación de servicios</li>
+                    <li>Proveedores de servicios tecnológicos y de almacenamiento</li>
+                    <li>Administraciones públicas cuando sea legalmente requerido</li>
+                    <li>Entidades financieras para la gestión de pagos</li>
+                </ul>
+                <p>No realizamos transferencias internacionales de datos fuera del Espacio Económico Europeo.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section6_title">6. Conservación de los Datos</h2>
+                <p>Los datos personales se conservarán durante el tiempo necesario para cumplir con las finalidades para las que fueron recogidos y, posteriormente, durante los plazos de prescripción legal aplicables.</p>
+                <p>En caso de no existir obligación legal, los datos se conservarán mientras no solicite su supresión y siempre que exista una base legítima para su tratamiento.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section7_title">7. Derechos del Usuario</h2>
+                <p>Como titular de los datos personales, usted tiene derecho a:</p>
+                <ul>
+                    <li><strong>Acceso:</strong> Conocer qué datos tratamos sobre usted</li>
+                    <li><strong>Rectificación:</strong> Solicitar la corrección de datos inexactos</li>
+                    <li><strong>Supresión:</strong> Solicitar la eliminación de sus datos</li>
+                    <li><strong>Oposición:</strong> Oponerse al tratamiento de sus datos</li>
+                    <li><strong>Limitación:</strong> Solicitar la limitación del tratamiento</li>
+                    <li><strong>Portabilidad:</strong> Recibir sus datos en formato estructurado</li>
+                    <li><strong>Revocación del consentimiento:</strong> Retirar el consentimiento en cualquier momento</li>
+                </ul>
+                <p>Para ejercer estos derechos, puede contactarnos a través de:</p>
+                <ul>
+                    <li>Email: fagrupinmobiliaria@gmail.com</li>
+                    <li>Dirección postal: Avenida Josep Tarradellas 134 bajos, 08029 Barcelona</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section8_title">8. Seguridad de los Datos</h2>
+                <p>FA GRUP ha implementado medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos personales y protegerlos contra accesos no autorizados, pérdida, destrucción o alteración.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section9_title">9. Cookies</h2>
+                <p>Nuestro sitio web utiliza cookies para mejorar la experiencia del usuario. Para más información, consulte nuestra Política de Cookies.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section10_title">10. Modificaciones</h2>
+                <p>FA GRUP se reserva el derecho de modificar esta Política de Privacidad para adaptarla a cambios legislativos o de nuestros servicios. Le recomendamos revisar periódicamente esta página.</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section11_title">11. Reclamaciones</h2>
+                <p>Si considera que el tratamiento de sus datos personales no cumple con la normativa, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es).</p>
+            </div>
+
+            <div class="privacy-section">
+                <h2 data-translate="privacy_section12_title">12. Contacto</h2>
+                <p>Para cualquier consulta sobre esta Política de Privacidad o sobre el tratamiento de sus datos personales, puede contactarnos:</p>
+                <ul>
+                    <li><strong>Email:</strong> fagrupinmobiliaria@gmail.com</li>
+                    <li><strong>Teléfono:</strong> +34 635 871 358</li>
+                    <li><strong>Dirección:</strong> Avenida Josep Tarradellas 134 bajos, 08029 Barcelona, España</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>FA GRUP</h3>
+                    <p>Soluciones integrales para empresas y particulares</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#inmobiliaria">Inmobiliaria</a></li>
+                        <li><a href="servicios.html#seguros">Seguros</a></li>
+                        <li><a href="servicios.html#viajes">Agencia de Viajes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +34 635 871 358</p>
+                    <p><i class="fas fa-envelope"></i> fagrupinmobiliaria@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Barcelona, España</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/fagrupinmobiliaria1/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FA GRUP. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="privacidad.html">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

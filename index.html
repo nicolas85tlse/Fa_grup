@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA GRUP - Soluciones Integrales para Empresas y Particulares</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/FA GRUP LOGO.svg" alt="FA GRUP Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="language-selector">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" onclick="toggleDropdown(event)" aria-expanded="false">
+                        <img src="images/flag_es.png" id="current-flag" alt="Español">
+                        <span id="current-lang-text">ES</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('es')">
+                            <img src="images/flag_es.png" alt="Español"> ES
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('ca')">
+                            <img src="images/flag_ca.png" alt="Català"> CAT
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('fr')">
+                            <img src="images/flag_fr.png" alt="Français"> FR
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('en')">
+                            <img src="images/flag_en.png" alt="English"> EN
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide slide-1 active"></div>
+            <div class="carousel-slide slide-2"></div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-translate="hero_title">FA GRUP - Inmobiliaria en Barcelona</h1>
+            <p class="slogan" data-translate="hero_slogan">Siempre Contigo</p>
+        </div>
+    </section>
+
+    <!-- Hero Subtitle -->
+    <section class="hero-subtitle-section">
+        <div class="container">
+            <p class="hero-subtitle-text" data-translate="hero_subtitle">Tu inmobiliaria de confianza en Barcelona. Acompañamiento profesional y cercano en compra, venta y alquiler</p>
+        </div>
+    </section>
+
+    <!-- What is FA GRUP Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2 data-translate="intro_title">¿Qué es FA GRUP?</h2>
+                <div style="display: grid; grid-template-columns: 350px 1fr; gap: 3rem; align-items: center; margin-top: 2rem;">
+                    <!-- Image -->
+                    <div>
+                        <img src="images/senora_flor.jpg" alt="FA GRUP" style="width: 100%; border-radius: 10px; box-shadow: var(--shadow);">
+                    </div>
+                    <!-- Text -->
+                    <div>
+                        <p data-translate="intro_text">FA GRUP es una inmobiliaria de Barcelona fundada en 2019, especializada en ofrecer un servicio integral en el sector inmobiliario. Acompañamos al cliente durante todas las etapas de compra, venta o alquiler con profesionalidad y cercanía. Nos distinguimos por nuestra atención personalizada, conocimiento del mercado local y compromiso con la transparencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="services_title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <!-- Inmobiliaria -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-translate="service_inmobiliaria">Inmobiliaria</h3>
+                    <p data-translate="service_inmobiliaria_desc">Venta de pisos con asesoramiento profesional. Acompañamos a nuestros clientes en cada paso de la compra de su vivienda.</p>
+                    <a href="servicios.html#inmobiliaria" class="btn btn-secondary" data-translate="btn_more_info">Más información</a>
+                </div>
+
+                <!-- Seguros -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-translate="service_seguros">Seguros</h3>
+                    <p data-translate="service_seguros_desc">Protección y tranquilidad para tu hogar, vida y negocio. Asesoramiento personalizado y gestión integral de pólizas.</p>
+                    <a href="servicios.html#seguros" class="btn btn-secondary" data-translate="btn_more_info">Más información</a>
+                </div>
+
+                <!-- Agencia de Viajes -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 data-translate="service_viajes">Agencia de Viajes</h3>
+                    <p data-translate="service_viajes_desc">Experiencias únicas, planificadas para ti. Organizamos tu viaje completo con atención profesional.</p>
+                    <a href="servicios.html#viajes" class="btn btn-secondary" data-translate="btn_more_info">Más información</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Brief -->
+    <section class="about-brief">
+        <div class="container">
+            <div class="about-content">
+                <h2 data-translate="about_title">Sobre Nosotros</h2>
+                
+                <div style="display: grid; grid-template-columns: 450px 1fr; gap: 3rem; align-items: center; margin: 2rem 0;">
+                    <!-- Video Section -->
+                    <div>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F333613268855417&show_text=false&width=400&t=0" width="400" height="476" style="border:none;overflow:hidden;display:block;border-radius:10px;box-shadow:var(--shadow);width:100%;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    
+                    <!-- Text -->
+                    <div>
+                        <p data-translate="about_text" style="margin-bottom: 2rem;">Somos una asesoría empresarial especializada en ofrecer soluciones integrales en las áreas fiscal, contable, laboral y estratégica. Nuestro objetivo es acompañar a empresas, autónomos y emprendedores en la gestión eficiente de su actividad, aportando claridad y un enfoque orientado a resultados.</p>
+                        <a href="nosotros.html" class="btn btn-outline" data-translate="btn_read_more">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Associated Companies -->
+    <section class="companies-section">
+        <div class="container">
+            <h2 class="section-title" data-translate="companies_title">Empresas Asociadas</h2>
+            <div class="companies-grid">
+                <!-- FA Asesoría Global -->
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="images/LOGO_ASESORIA_GLOBAL.svg" alt="FA Asesoría Global Logo" style="max-width: 120px; height: auto;">
+                    </div>
+                    <h3 data-translate="company_fa_asesoria">FA Asesoría Global</h3>
+                    <p data-translate="company_fa_desc">Servicios de abogados, asesoría legal y jurídica. Especialistas en derecho penal, laboral, familiar, civil y administrativo.</p>
+                    <a href="legal.html" class="btn btn-secondary" data-translate="btn_visit_web">Visitar web</a>
+                </div>
+
+                <!-- CICTAEC -->
+                <div class="company-card">
+                    <div class="company-logo">
+                        <img src="images/logo_cictaec.svg" alt="CICTAEC Logo" style="max-width: 120px; height: auto;">
+                    </div>
+                    <h3 data-translate="company_cictaec">CICTAEC</h3>
+                    <p data-translate="company_cictaec_desc">Empresas, cultura, turismo y negocios. Soluciones integrales para el desarrollo empresarial y cultural.</p>
+                    <a href="empresas.html#cictaec" class="btn btn-secondary" data-translate="btn_visit_web">Visitar web</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section class="quick-contact">
+        <div class="container">
+            <h2 data-translate="contact_hero_title">Especialistas que entienden el arte de Ventas</h2>
+            <p data-translate="contact_question">¿Buscas tu hogar ideal en Barcelona? Contáctanos y te acompañaremos en todo el proceso.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+34 635 871 358</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>fagrupinmobiliaria@gmail.com</p>
+                </div>
+            </div>
+            <a href="contacto.html" class="btn btn-primary" data-translate="btn_send_query">Envíanos tu consulta</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>FA GRUP</h3>
+                    <p data-translate="footer_slogan">Soluciones integrales para empresas y particulares</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_services">Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#inmobiliaria">Inmobiliaria</a></li>
+                        <li><a href="servicios.html#seguros">Seguros</a></li>
+                        <li><a href="servicios.html#viajes">Agencia de Viajes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_company">Empresa</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer_contact">Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +34 635 871 358</p>
+                    <p><i class="fas fa-envelope"></i> fagrupinmobiliaria@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Barcelona, España</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="social_title">Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/fagrupinmobiliaria1/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FA GRUP. <span data-translate="footer_rights">Todos los derechos reservados</span>.</p>
+                <div class="footer-links">
+                    <a href="#" data-translate="footer_legal">Aviso Legal</a>
+                    <a href="privacidad.html" data-translate="footer_privacy">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34635871358" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

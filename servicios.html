@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - FA GRUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/FA GRUP LOGO.svg" alt="FA GRUP Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="language-selector">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" onclick="toggleDropdown(event)" aria-expanded="false">
+                        <img src="images/flag_es.png" id="current-flag" alt="Español">
+                        <span id="current-lang-text">ES</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('es')">
+                            <img src="images/flag_es.png" alt="Español"> ES
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('ca')">
+                            <img src="images/flag_ca.png" alt="Català"> CAT
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('fr')">
+                            <img src="images/flag_fr.png" alt="Français"> FR
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('en')">
+                            <img src="images/flag_en.png" alt="English"> EN
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Nuestros Servicios</h1>
+            <p>Soluciones integrales adaptadas a tus necesidades</p>
+        </div>
+    </section>
+
+    <!-- INMOBILIARIA -->
+    <section id="inmobiliaria" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <h2><i class="fas fa-home"></i> Inmobiliaria FA GRUP - Barcelona</h2>
+                <p>Servicio integral en compra, venta y alquiler de inmuebles en Barcelona. Acompañamos a nuestros clientes en cada paso con profesionalidad y cercanía</p>
+            </div>
+
+            <div class="service-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>Valoración Profesional</h3>
+                    <p>Análisis detallado del mercado y valoración precisa de tu propiedad con criterios técnicos y transparentes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Promoción y Marketing</h3>
+                    <p>Publicación en portales inmobiliarios líderes, fotografía profesional y campañas de marketing digital efectivas.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Gestión de Visitas</h3>
+                    <p>Coordinación de visitas con potenciales compradores y negociación profesional para lograr el mejor acuerdo.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Asesoramiento Legal</h3>
+                    <p>Gestión completa de contratos, escrituras y trámites notariales para una operación segura y transparente.</p>
+                </div>
+            </div>
+
+            <div class="service-cta">
+                <a href="contacto.html" class="btn btn-primary">Consulta nuestros pisos disponibles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGUROS -->
+    <section id="seguros" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <h2><i class="fas fa-shield-alt"></i> Seguros FA GRUP</h2>
+                <p>Protección y tranquilidad para tu hogar, vida y negocio con asesoramiento personalizado</p>
+            </div>
+
+            <div class="service-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Seguros para Particulares</h3>
+                    <p>Cobertura completa para hogar, automóvil, vida y salud. Protegemos lo que más te importa.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Seguros para Empresas</h3>
+                    <p>Responsabilidad civil, seguros de negocio y protección integral para tu actividad empresarial.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Comparativa Personalizada</h3>
+                    <p>Analizamos las mejores opciones del mercado para encontrar la póliza que mejor se adapta a ti.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Gestión de Siniestros</h3>
+                    <p>Atención postventa completa y soporte en la resolución de incidencias con tu aseguradora.</p>
+                </div>
+            </div>
+
+            <div class="service-cta">
+                <a href="contacto.html" class="btn btn-primary">Solicita tu póliza personalizada</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENCIA DE VIAJES -->
+    <section id="viajes" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <h2><i class="fas fa-plane"></i> Viajes FA GRUP</h2>
+                <p>Experiencias únicas, planificadas para ti. Organizamos tu viaje completo con atención profesional</p>
+            </div>
+
+            <div class="service-features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-suitcase"></i>
+                    </div>
+                    <h3>Paquetes Completos</h3>
+                    <p>Vuelo + hotel + transporte + actividades. Todo organizado para que solo disfrutes de tu viaje.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Reservas Individuales</h3>
+                    <p>Flexibilidad total: reserva solo vuelo, solo hotel o solo excursiones según tus necesidades.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Excursiones y Actividades</h3>
+                    <p>Tours guiados, experiencias locales y actividades únicas para hacer tu viaje inolvidable.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Seguros de Viaje</h3>
+                    <p>Cobertura completa y asistencia 24/7 para viajar con total tranquilidad.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Asesoramiento Personalizado</h3>
+                    <p>Itinerarios adaptados a tus preferencias, presupuesto y estilo de viaje.</p>
+                </div>
+            </div>
+
+            <div class="service-cta">
+                <a href="contacto.html" class="btn btn-primary">Planifica tu viaje con nosotros</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>FA GRUP</h3>
+                    <p>Soluciones integrales para empresas y particulares</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#inmobiliaria">Inmobiliaria</a></li>
+                        <li><a href="#seguros">Seguros</a></li>
+                        <li><a href="#viajes">Agencia de Viajes</a></li>
+                        <li><a href="legal.html">Departamento Legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +34 635 871 358</p>
+                    <p><i class="fas fa-envelope"></i> fagrupinmobiliaria@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Barcelona, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FA GRUP. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Aviso Legal</a>
+                    <a href="privacidad.html">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

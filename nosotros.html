@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - FA GRUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/FA GRUP LOGO.svg" alt="FA GRUP Logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html" class="active">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="language-selector">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" onclick="toggleDropdown(event)" aria-expanded="false">
+                        <img src="images/flag_es.png" id="current-flag" alt="Español">
+                        <span id="current-lang-text">ES</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('es')">
+                            <img src="images/flag_es.png" alt="Español"> ES
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('ca')">
+                            <img src="images/flag_ca.png" alt="Català"> CAT
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('fr')">
+                            <img src="images/flag_fr.png" alt="Français"> FR
+                        </a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0)" onclick="setLang('en')">
+                            <img src="images/flag_en.png" alt="English"> EN
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <p>Conoce quiénes somos y qué nos diferencia</p>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Quiénes Somos</h2>
+                <p class="slide-in-right">FA GRUP es una inmobiliaria ubicada en Barcelona, fundada el 11 de diciembre de 2019. Nos especializamos en ofrecer un servicio integral en el sector inmobiliario, acompañando al cliente en todo el proceso de compra, venta o alquiler de inmuebles con profesionalidad y cercanía.</p>
+                
+                <p class="slide-in-right">Contamos con un equipo formado por profesionales con amplio conocimiento del mercado inmobiliario local en Barcelona. Analizamos cada caso de forma individual para ofrecer servicios adaptados a las necesidades reales de cada cliente, asegurando una atención cercana, responsable y totalmente personalizada.</p>
+                
+                <p class="slide-in-right"><strong>Misión:</strong> Acompañar a cada cliente de manera profesional y cercana, garantizando seguridad, transparencia y eficiencia en todas las operaciones inmobiliarias.</p>
+                
+                <p class="slide-in-right"><strong>Visión:</strong> Convertirse en la inmobiliaria de referencia en Barcelona, reconocida por su cercanía, confianza y excelencia en el servicio integral al cliente.</p>
+                
+                <p class="slide-in-right">Desde nuestra fundación en 2019, hemos acompañado a cientos de clientes, transformando un trámite complejo en una experiencia confiable y segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Valores</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Profesionalidad</h3>
+                    <p>Servicios de máxima calidad respaldados por experiencia y conocimiento profundo del mercado inmobiliario de Barcelona.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Cercanía</h3>
+                    <p>Atención personalizada y trato humano en cada etapa del proceso inmobiliario, construyendo relaciones de confianza.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Transparencia</h3>
+                    <p>Comunicación clara y honesta en todas las operaciones, garantizando seguridad en cada transacción.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compromiso con el Cliente</h3>
+                    <p>Acompañamiento integral durante todo el proceso de compra, venta o alquiler de tu inmueble.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por Qué Elegirnos -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Por Qué Elegirnos</h2>
+                <ul class="differentiators">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Soluciones Integrales:</strong> Ofrecemos servicios completos en asesoría empresarial, inmobiliaria, seguros y viajes desde una única empresa.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Atención Personalizada:</strong> Cada cliente recibe un trato individualizado adaptado a sus necesidades específicas.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Equipo Multidisciplinar:</strong> Profesionales especializados en diferentes áreas trabajando de forma coordinada.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Experiencia Contrastada:</strong> Años de trayectoria respaldando empresas y particulares en sus proyectos.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Compromiso con la Excelencia:</strong> Mejora continua y actualización constante de conocimientos y procedimientos.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestra Metodología -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Metodología</h2>
+            <div class="methodology-steps">
+                <div class="methodology-step">
+                    <div class="step-number">1</div>
+                    <h3>Análisis Individual</h3>
+                    <p>Estudiamos tu caso de forma personalizada para entender tus necesidades y objetivos.</p>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">2</div>
+                    <h3>Planes Adaptados</h3>
+                    <p>Diseñamos estrategias y soluciones específicas para tu situación particular.</p>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">3</div>
+                    <h3>Acompañamiento</h3>
+                    <p>Te guiamos durante todo el proceso con seguimiento continuo y soporte profesional.</p>
+                </div>
+
+                <div class="methodology-step">
+                    <div class="step-number">4</div>
+                    <h3>Resultados</h3>
+                    <p>Evaluamos los resultados y ajustamos estrategias para garantizar el éxito de tu proyecto.</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+                <a href="servicios.html" class="btn btn-outline">Conoce nuestros servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>FA GRUP</h3>
+                    <p>Soluciones integrales para empresas y particulares</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#inmobiliaria">Inmobiliaria</a></li>
+                        <li><a href="servicios.html#seguros">Seguros</a></li>
+                        <li><a href="servicios.html#viajes">Agencia de Viajes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +34 635 871 358</p>
+                    <p><i class="fas fa-envelope"></i> fagrupinmobiliaria@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Barcelona, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FA GRUP. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Aviso Legal</a>
+                    <a href="privacidad.html">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
